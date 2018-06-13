@@ -8,19 +8,26 @@ Many external factors may disrupt a warp, e.g. warp disruption fields, insuffici
 
 An ordinary object is any object that does not fall withing any of the other categories described below.
 
-Let the 3D vectors ``$ p_d $`` and ``$ p_s $`` represent the object's position and the warp's origin, respectively; and ``$ \vec{v} $`` the directional vector from ``$ p_s $`` to ``$ p_d $``. Let ``$ r $`` be the object's radius.
+Let the 3D vectors ![`p_d`][p_d] and ![`p_s`][p_s] represent the object's position and the warp's origin, respectively; and ![\vec{v}][vec_v] the directional vector from ![`p_s`][p_s] to ![`p_d`][p_d]. Let ![`r`][r] be the object's radius.
 
-The object's warp-in point is the vector ``$ p_s + \vec{v} - r\hat{v} $``.
+The object's warp-in point is the vector ![p_s + \vec{v} - r\hat{v}](https://latex.codecogs.com/gif.latex?p_s&space;&plus;&space;\vec{v}&space;-&space;r\hat{v} "p_s + \vec{v} - r\hat{v}")
+
+[p_d]: https://latex.codecogs.com/gif.latex?p_d "p_d"
+[p_s]: https://latex.codecogs.com/gif.latex?p_s "p_s"
+[r]: https://latex.codecogs.com/gif.latex?r "r"
+[vec_v]: https://latex.codecogs.com/gif.latex?\vec{v} "\vec{v}"
 
 ## Large Objects
 
 A large object is any celestial body whose radius exceeds 90 kilometres (180 kilometres in diameter), except planets.
 
-Let ``$ x $``, ``$ y $``, and ``$ z $`` represent the object's coordinates. Let ``$ r $`` be the object's radius.
+Let ![`x`][x], ![`y`][y], and ![`z`][z] represent the object's coordinates. Let ![`r`][r] be the object's radius.
 
-The object's warp-in point is the vector ``$ \left(x + (r + 5000000)\cos{r} \\,
-  y + 1.3r - 7500 \\,
-  z - (r + 5000000)\sin{r} \\  \right). $``
+The object's warp-in point is the vector ![`\left(x + (r + 5 \cdot 10^6)\cos{r} \\, y + 1.3r - 7500 \\, z - (r + 5 \cdot 10^6)\sin{r} \\ \right)`](https://latex.codecogs.com/gif.latex?\left(x&space;&plus;&space;(r&space;&plus;&space;5&space;\cdot&space;10^6)\cos{r}&space;\\,&space;y&space;&plus;&space;1.3r&space;-&space;7500&space;\\,&space;z&space;-&space;(r&space;&plus;&space;5&space;\cdot&space;10^6)\sin{r}&space;\\&space;\right))
+
+[x]: https://latex.codecogs.com/gif.latex?x "x"
+[y]: https://latex.codecogs.com/gif.latex?y "y"
+[z]: https://latex.codecogs.com/gif.latex?z "z"
 
 ## Planets
 
@@ -68,7 +75,8 @@ The skillpoints needed for a level depend on the skill rank.
 
 ```math
  y_{skillpoints} = 2^{2.5(x_{skilllevel}-1)} \cdot 250 \cdot r_{skillrank}
- ```
+```
+![test](https://latex.codecogs.com/gif.latex?y_{skillpoints}&space;=&space;2^{2.5(x_{skilllevel}-1)}&space;\cdot&space;250&space;\cdot&space;r_{skillrank} "y_{skillpoints} = 2^{2.5(x_{skilllevel}-1)} \cdot 250 \cdot r_{skillrank}")
 
 ### Skillpoints for common ranks
 
